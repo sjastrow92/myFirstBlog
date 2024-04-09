@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog Entry Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Blog Entry Form</h1>
+      <!-- dark/light mode button -->
+      <button id="theme-toggle">Light/Dark</button>
+    </header>
+    <!-- form structure -->
+    <form action="blog.html" method="POST">
+      <label for="userName">Username:</label><br />
+      <input type="text" id="userName" name="userName" required /><br /><br />
+
+      <label for="title">Title:</label><br />
+      <input type="text" id="title" name="title" required /><br /><br />
+
+      <label for="content">Content:</label><br />
+      <textarea
+        id="content"
+        name="content"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <aside class="aside"></aside>
+
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
